@@ -11,34 +11,14 @@
   <link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
   <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
   <!--grupo JavaScript-->
-  <script type="text/javascript" src="cordova.js"></script>
+  
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   <script src="js/acciones.js"></script>
   <script src="phonegap.js" type="text/javascript"></script>
   <!-- Extra Codiqa features -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
-  <script type="text/javascript">
-	$(function(){
-		function camSuccess(imgData){
-			$("#img_camHP").attr("src",imgData);
-		}
-		
-		function error(error){
-			alert(error);
-		}
-		
-		function accessCamera(){
-			var options ={
-				destinationType: Camera.DestinationType.FILE_URI,
-				sourceType: Camera.PictureSourceType.Camera
-			}
-			navigator.camera.getPicture();
-		}
-		
-		$("#btn_camera").on("click", accessCamera);
-	});
-  </script>
+  
 </head>
 
 <body>
@@ -53,7 +33,6 @@
   <a data-role="button" data-theme="a" href="#page3" data-icon="minus" data-iconpos="bottom">Geolocalización</a>
   <div class=" ui-content">
     <a class="btn_camera" data-role="button" data-theme="a" href="#" data-icon="star" data-iconpos="bottom">Cámara</a>
-    <img id="img_camHP"
   </div>
   
   </div>
